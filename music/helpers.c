@@ -32,11 +32,11 @@ bool is_rest(string s)
     // takes in String return boolean if String is a rest
     if (strcmp(s, emptyline) == 0) //what is needed here to ref string
     {
-        return true;
+        return 0;
     }
 
     else
     {
-    return false;
+    return 1;
     }
 }
