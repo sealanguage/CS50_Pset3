@@ -25,6 +25,7 @@ int main(int argc, string argv[])
         if (octave < 0 || octave > 8)
         {
             fprintf(stderr, "Invalid octave\n");
+            //fprintf function to print error messages to stderr
             return 1;
         }
     }
@@ -41,7 +42,11 @@ int main(int argc, string argv[])
     for (int i = 0, n = sizeof(NOTES) / sizeof(string); i < n; i++)
     {
         // Append octave to note
+        //allocate space for a short string of 4 chars
         char note[4];
+
+        // stores output to a string using placeholders s&i
+        //concatenates notes and octaves bin order to append them later
         sprintf(note, "%s%i", NOTES[i], octave);
 
         // Calculate frequency of note
