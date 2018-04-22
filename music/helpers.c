@@ -15,11 +15,11 @@ int duration(string fraction)
 {
     int nnum = atoi(&fraction[0]); //extract numerator
     int denom = atoi(&fraction[2]);//extract denominator
-    int beats = ((8/denom) * nnum);
+    duration = ((8/denom) * nnum);
     //operation to calculate total beats in 8th notes
 
     // printf("beats: %d", beats);
-    return beats; //return total number of 8th notes in fraction
+    return duration; //return total number of 8th notes in fraction
 }
 
 // Calculates frequency (in Hz) of a note; round int
