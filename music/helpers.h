@@ -3,6 +3,11 @@
 #include <cs50.h>
 
 // Converts a fraction to eighths
+//convert char to number
+//takes a fraction as a string,
+//output an int that returns whole number of 1/8 notes in notation
+//e.g. two 1/8s in 1/4/
+//return an int
 int duration(string fraction);
 
 // Calculates frequency (in Hz) of a note formatted as XY,
