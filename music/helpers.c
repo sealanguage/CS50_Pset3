@@ -15,7 +15,8 @@ int duration(string fraction)
 {
     int nnum = atoi(&fraction[0]); //extract numerator
     int denom = atoi(&fraction[2]);//extract denominator
-    int eighths = ((8/denom) * nnum);
+    int notevalue = 8; //base type/value of note
+    int eighths = ((notevalue/denom) * nnum);
     //operation to calculate total beats in 8th notes
 
     // printf("beats: %d", beats);
