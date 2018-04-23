@@ -97,7 +97,7 @@ int frequency(string note)
     }
     else
     {
-        printf("need another letter");
+        printf("need letter");
     }
 
     //check for accidentals
